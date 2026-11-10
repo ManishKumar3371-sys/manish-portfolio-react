@@ -354,10 +354,16 @@ h2 span {
 .project-link {
   display: inline-block;
   margin-top: 25px;
+  margin-right: 15px;
   color: #bb91ff;
   font-size: 14px;
+  text-decoration: none;
 }
 
+.project-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
 .contact-section {
   text-align: center;
 }

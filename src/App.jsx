@@ -451,6 +451,7 @@ Message: ${callRequest.message}`
   </div>
 </div>
 
+
 <div className="project-card">
   <div className="project-top">
     <span className="project-tag">AI WEB APPLICATION</span>
@@ -477,7 +478,17 @@ Message: ${callRequest.message}`
   >
     Live Demo ↗
   </a>
+
+  <a
+    href="https://github.com/ManishKumar3371-sys/Study-Bot"
+    target="_blank"
+    rel="noreferrer"
+    className="project-link"
+  >
+    GitHub Source Code ↗
+  </a>
 </div>
+
 
         </section>
           
