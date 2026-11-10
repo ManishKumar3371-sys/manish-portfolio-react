@@ -451,6 +451,34 @@ Message: ${callRequest.message}`
   </div>
 </div>
 
+<div className="project-card">
+  <div className="project-top">
+    <span className="project-tag">AI WEB APPLICATION</span>
+    <span className="project-number">06</span>
+  </div>
+
+  <h3>Study Buddy – AI Study Assistant</h3>
+
+  <p>
+    An AI-powered study assistant that helps students understand
+    concepts, ask questions and get instant responses using
+    Google's Gemini AI API.
+  </p>
+
+  <div className="project-tech">
+    React · Vite · Node.js · Express · Gemini AI API
+  </div>
+
+  <a
+    href="https://study-bot-sandy.vercel.app/"
+    target="_blank"
+    rel="noreferrer"
+    className="project-link"
+  >
+    Live Demo ↗
+  </a>
+</div>
+
         </section>
           
 {/* CERTIFICATIONS */}
