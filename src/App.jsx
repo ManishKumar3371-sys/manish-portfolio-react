@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import profile from "./assets/profile.png";
 import "./App.css";
+import ManishAI from "./components/ManishAI/ManishAI";
 
 
 
@@ -77,7 +78,7 @@ Message: ${callRequest.message}`
 )}
     <nav className="navbar">
   <a href="#home" className="logo">
-    MANISH<span>.</span>
+    MK<span>.</span>
   </a>
 
   <button
@@ -119,7 +120,7 @@ Message: ${callRequest.message}`
               <span>Kumar.</span>
             </h1>
 
-            <h2>Aspiring Software Engineer</h2>
+            <h2>Software Engineer</h2>
 
             <p className="hero-description">
               Computer Engineering student with hands-on experience
@@ -128,38 +129,24 @@ Message: ${callRequest.message}`
               practical software solutions.
             </p>
 
-            <div className="hero-buttons">
-              <a href="#projects" className="primary-button">
-                Explore My Work ↗
-              </a>
-              <a href="#contact" className="secondary-button">
-                Get In Touch
-                <a
-             href="/Manish-Kumar-Resume.pdf"
-             download="Manish-Kumar-Resume.pdf"
-             className="secondary-button"
-            >
-              Download Resume ↓
-             </a>
-              </a>
-            </div>
+            
+<div className="hero-buttons">
+  <a href="#projects" className="primary-button">
+    Explore My Work ↗
+  </a>
 
-            <div className="social-links">
-              <a
-                href="https://github.com/ManishKumar3371-sys"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub ↗
-              </a>
-              <a
-                href="https://www.linkedin.com/in/manish-kumar-bb213b337/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn ↗
-              </a>
-            </div>
+  <a href="#contact" className="secondary-button">
+    Get In Touch
+  </a>
+
+  <a
+    href="/Manish-Kumar-Resume.pdf"
+    download="Manish-Kumar-Resume.pdf"
+    className="secondary-button"
+  >
+    Download Resume ↓
+  </a>
+</div>
           </div>
 
           <div className="hero-visual">
@@ -192,7 +179,7 @@ Message: ${callRequest.message}`
 
           <p className="section-description">
             I'm a final-year Computer Engineering student at
-            Savitribai Phule Pune University (SPPU), expected to
+            Savitribai Phule Pune University (SPPU),
             graduate in 2027. I have hands-on experience in web
             development through professional internships. I enjoy
             developing responsive user interfaces, writing clean
@@ -666,10 +653,13 @@ Message: ${callRequest.message}`
         </section>
       </main>
 
-      <footer>
+            <footer>
         <p>© {new Date().getFullYear()} Manish Kumar</p>
         <p>Designed & built with React.</p>
       </footer>
+
+      <ManishAI />
+
     </div>
   );
 }
