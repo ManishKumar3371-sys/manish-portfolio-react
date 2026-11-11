@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "preview": "vite preview",
+  "start": "node server/server.js"
+},
   "devDependencies": {
     "@vitejs/plugin-react": "^6.3.0",
     "typescript": "~7.0.2",
