@@ -30,7 +30,7 @@ useEffect(() => {
 
     try {
       const response = await fetch(
-        "http://localhost:3001/api/chat",
+       "https://manish-ai-backend.onrender.com/api/chat",
         {
           method: "POST",
           headers: {
