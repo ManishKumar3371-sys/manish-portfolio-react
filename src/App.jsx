@@ -337,6 +337,45 @@ Message: ${callRequest.message}`
               <span className="project-number">01</span>
             </div>
 
+            <h3>Biometric Electronic Voting System & Cryptographic Ledger</h3>
+            <p>
+              A high-assurance electronic voting system concept utilizing multi-modal
+              biometric verification (optical fingerprint & facial landmark recognition),
+              strict duplicate-voting elimination, zero-knowledge ballot secrecy, and an
+              immutable Merkle audit chain with live tamper detection.
+            </p>
+
+            <div className="project-tech">
+              Python · Flask · SQLite · Cryptography (SHA-256) · Merkle Chain · Cyber Defense
+            </div>
+
+            <div className="project-links">
+              <a
+                href="https://biometric-voting-system.onrender.com"
+                target="_blank"
+                rel="noreferrer"
+                className="project-link project-link-primary"
+              >
+                Live Demo ↗
+              </a>
+
+              <a
+                href="https://github.com/ManishKumar3371-sys/biometric-voting-system"
+                target="_blank"
+                rel="noreferrer"
+                className="project-link"
+              >
+                View Source Code ↗
+              </a>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <div className="project-top">
+              <span className="project-tag">MACHINE LEARNING</span>
+              <span className="project-number">02</span>
+            </div>
+
             <h3>ModelWatch</h3>
             <p>
               A machine learning model monitoring platform for
@@ -373,7 +412,7 @@ Message: ${callRequest.message}`
           <div className="project-card">
             <div className="project-top">
               <span className="project-tag">WEB DEVELOPMENT</span>
-              <span className="project-number">02</span>
+              <span className="project-number">03</span>
             </div>
 
             <h3>AI Chatbot with GenAI API</h3>
@@ -392,9 +431,9 @@ Message: ${callRequest.message}`
           <div className="project-card">
             <div className="project-top">
               <span className="project-tag">CYBERSECURITY</span>
-              <span className="project-number">03</span>
+              <span className="project-number">04</span>
             </div>
-
+            
             <h3>Website Penetration Testing</h3>
             <p>
               Performed web security analysis in an authorized
@@ -409,7 +448,7 @@ Message: ${callRequest.message}`
           <div className="project-card">
         <div className="project-top">
           <span className="project-tag">FINAL YEAR PROJECT</span>
-          <span className="project-number">04</span>
+          <span className="project-number">05</span>
           </div>
 
            <h3>
