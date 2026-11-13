@@ -349,14 +349,25 @@ Message: ${callRequest.message}`
               Python · FastAPI · React · Scikit-learn · Pandas
             </div>
 
-            <a
-              href="https://github.com/ManishKumar3371-sys/ModelWatch"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              View Source Code ↗
-            </a>
+            <div className="project-links">
+              <a
+                href="https://model-watch-gules.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-link project-link-primary"
+              >
+                Live Demo ↗
+              </a>
+
+              <a
+                href="https://github.com/ManishKumar3371-sys/ModelWatch"
+                target="_blank"
+                rel="noreferrer"
+                className="project-link"
+              >
+                View Source Code ↗
+              </a>
+            </div>
           </div>
 
           <div className="project-card">
@@ -457,23 +468,25 @@ Message: ${callRequest.message}`
     React · Vite · Node.js · Express · Gemini AI API
   </div>
 
-  <a
-    href="https://study-bot-sandy.vercel.app/"
-    target="_blank"
-    rel="noreferrer"
-    className="project-link"
-  >
-    Live Demo ↗
-  </a>
+  <div className="project-links">
+    <a
+      href="https://study-bot-sandy.vercel.app/"
+      target="_blank"
+      rel="noreferrer"
+      className="project-link project-link-primary"
+    >
+      Live Demo ↗
+    </a>
 
-  <a
-    href="https://github.com/ManishKumar3371-sys/Study-Bot"
-    target="_blank"
-    rel="noreferrer"
-    className="project-link"
-  >
-    GitHub Source Code ↗
-  </a>
+    <a
+      href="https://github.com/ManishKumar3371-sys/Study-Bot"
+      target="_blank"
+      rel="noreferrer"
+      className="project-link"
+    >
+      GitHub Source Code ↗
+    </a>
+  </div>
 </div>
 
 
