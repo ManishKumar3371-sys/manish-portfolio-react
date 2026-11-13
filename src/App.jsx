@@ -429,26 +429,9 @@ Message: ${callRequest.message}`
           </div>
 
           <div className="project-card">
-            <div className="project-top">
-              <span className="project-tag">CYBERSECURITY</span>
-              <span className="project-number">04</span>
-            </div>
-            
-            <h3>Website Penetration Testing</h3>
-            <p>
-              Performed web security analysis in an authorized
-              testing context and explored vulnerability
-              identification using ethical hacking tools.
-            </p>
-
-            <div className="project-tech">
-              Kali Linux · Nmap · Nikto · Burp Suite
-            </div>
-          </div>
-          <div className="project-card">
         <div className="project-top">
           <span className="project-tag">FINAL YEAR PROJECT</span>
-          <span className="project-number">05</span>
+          <span className="project-number">04</span>
           </div>
 
            <h3>
@@ -537,13 +520,13 @@ Message: ${callRequest.message}`
   <h3>SENTINEL-SEC – Web Penetration Testing Lab</h3>
 
   <p>
-    An interactive web application security auditing & vulnerability assessment
-    management platform mapped to the OWASP Top 10 and CVSS v3.1 standards.
-    Features automated HTTP defensive header audits, JWT analysis, and report generation.
+    Performed web security analysis in an authorized testing context and explored
+    vulnerability identification using ethical hacking tools. Built an interactive security
+    auditing platform mapped to OWASP Top 10 and CVSS v3.1 standards.
   </p>
 
   <div className="project-tech">
-    Python 3 · JavaScript · OWASP WSTG · CVSS v3.1 · Security Auditing
+    Kali Linux · Burp Suite · Python 3 · JavaScript · OWASP WSTG · CVSS v3.1
   </div>
 
   <div className="project-links">
