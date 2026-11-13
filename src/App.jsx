@@ -450,32 +450,12 @@ Message: ${callRequest.message}`
            </div>
           </div>
         
-<div className="project-card">
-  <div className="project-top">
-    <span className="project-tag">BIOMETRIC SECURITY</span>
-    <span className="project-number">05</span>
-  </div>
-
-  <h3>Biometric Voting System</h3>
-
-  <p>
-    A secure voting system concept that uses biometric
-    authentication to verify voter identity and help prevent
-    duplicate or unauthorized voting. The project explores
-    voter verification, secure vote recording and transparent
-    election processes.
-  </p>
-
-  <div className="project-tech">
-    Biometric Authentication · Voter Verification · Secure Voting
-  </div>
-</div>
 
 
 <div className="project-card">
   <div className="project-top">
     <span className="project-tag">AI WEB APPLICATION</span>
-    <span className="project-number">06</span>
+    <span className="project-number">05</span>
   </div>
 
   <h3>Study Buddy – AI Study Assistant</h3>
@@ -514,7 +494,7 @@ Message: ${callRequest.message}`
 <div className="project-card">
   <div className="project-top">
     <span className="project-tag">CYBERSECURITY & AUDITING</span>
-    <span className="project-number">07</span>
+    <span className="project-number">06</span>
   </div>
 
   <h3>SENTINEL-SEC – Web Penetration Testing Lab</h3>
