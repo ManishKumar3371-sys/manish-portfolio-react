@@ -528,6 +528,45 @@ Message: ${callRequest.message}`
   </div>
 </div>
 
+<div className="project-card">
+  <div className="project-top">
+    <span className="project-tag">CYBERSECURITY & AUDITING</span>
+    <span className="project-number">07</span>
+  </div>
+
+  <h3>SENTINEL-SEC – Web Penetration Testing Lab</h3>
+
+  <p>
+    An interactive web application security auditing & vulnerability assessment
+    management platform mapped to the OWASP Top 10 and CVSS v3.1 standards.
+    Features automated HTTP defensive header audits, JWT analysis, and report generation.
+  </p>
+
+  <div className="project-tech">
+    Python 3 · JavaScript · OWASP WSTG · CVSS v3.1 · Security Auditing
+  </div>
+
+  <div className="project-links">
+    <a
+      href="https://manishkumar3371-sys.github.io/web-security-lab/"
+      target="_blank"
+      rel="noreferrer"
+      className="project-link project-link-primary"
+    >
+      Live Demo ↗
+    </a>
+
+    <a
+      href="https://github.com/ManishKumar3371-sys/web-security-lab"
+      target="_blank"
+      rel="noreferrer"
+      className="project-link"
+    >
+      GitHub Source Code ↗
+    </a>
+  </div>
+</div>
+
 
         </section>
           
