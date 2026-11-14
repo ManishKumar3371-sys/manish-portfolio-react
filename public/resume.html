@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish Kumar - Software Engineer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e293b;
+      --accent: #2563eb;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --border: #cbd5e1;
+      --bg-pill: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background-color: #f8fafc;
+      padding: 24px;
+      line-height: 1.5;
+    }
+
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 44px 48px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Print & Action Controls */
+    .action-bar {
+      max-width: 850px;
+      margin: 0 auto 16px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-print {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s ease;
+    }
+
+    .btn-print:hover {
+      background: #1d4ed8;
+    }
+
+    .btn-portfolio {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 18px;
+      margin-bottom: 22px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+
+    .title-sub {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 4px;
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .contact-item a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-item a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary);
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 13.5px;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    /* Experience & Projects */
+    .item-block {
+      margin-bottom: 14px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .item-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .item-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .item-title a:hover {
+      color: var(--accent);
+    }
+
+    .item-subtitle {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .item-date {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    .bullet-list li {
+      font-size: 13px;
+      color: #334155;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    .tech-stack-line {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 3px;
+    }
+
+    .tech-stack-line strong {
+      color: var(--text);
+    }
+
+    /* Skills Grid */
+    .skills-category {
+      margin-bottom: 6px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #334155;
+    }
+
+    .skills-category strong {
+      color: var(--primary);
+      display: inline-block;
+      width: 175px;
+    }
+
+    /* Education */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    /* Print Styles for PDF Export */
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .resume-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+      .section-title {
+        border-color: #000;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px;
+      }
+      .resume-container {
+        padding: 24px 20px;
+      }
+      .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .skills-category strong {
+        display: block;
+        width: 100%;
+        margin-bottom: 2px;
+      }
+      .edu-item {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <a href="https://manish-portfolio-react-ten.vercel.app/" target="_blank" class="btn-portfolio">
+      ? Back to Portfolio
+    </a>
+    <button class="btn-print" onclick="window.print()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+        <rect x="6" y="14" width="12" height="8"></rect>
+      </svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="resume-container">
+    <!-- Header -->
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>MANISH KUMAR</h1>
+          <div class="title-sub">Computer Engineering Student & Software Developer</div>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          ?? Pune, Maharashtra, India
+        </div>
+        <div class="contact-item">
+          ?? <a href="mailto:mk80909596@gmail.com">mk80909596@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          ?? <a href="https://www.linkedin.com/in/manish-kumar-bb213b337/" target="_blank">linkedin.com/in/manish-kumar-bb213b337</a>
+        </div>
+        <div class="contact-item">
+          ?? <a href="https://github.com/ManishKumar3371-sys" target="_blank">github.com/ManishKumar3371-sys</a>
+        </div>
+        <div class="contact-item">
+          ?? <a href="https://manish-portfolio-react-ten.vercel.app/" target="_blank">manish-portfolio-react-ten.vercel.app</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Computer Engineering undergraduate at Savitribai Phule Pune University (SPPU) with hands-on web development internship experience and a solid foundation in Data Structures, Object-Oriented Programming, and full-stack software development. Proven track record of developing high-performance web applications, machine learning monitoring systems (ModelWatch), cyber defense labs, and AI-driven study tools. Experienced in React, JavaScript, Python, and modern backend integration.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <div class="section-title">Education</div>
+      <div class="item-block">
+        <div class="item-header">
+          <div class="item-title">Bachelor of Engineering (B.E.) in Computer Engineering</div>
+          <div class="item-date">Graduation: 2027</div>
+        </div>
+        <div class="item-subtitle">Savitribai Phule Pune University (SPPU), Pune, Maharashtra</div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-item">
+          <div style="font-size: 13px; color: #334155;"><strong>Class XII (Senior Secondary)</strong> - Allahabad Public School & College (APS), Prayagraj, UP</div>
+        </div>
+        <div class="edu-item">
+          <div style="font-size: 13px; color: #334155;"><strong>Class X (Secondary)</strong> - Kaushambi Presidency School (KPS), Kaushambi, UP</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-category">
+        <strong>Languages:</strong> Java, Python, JavaScript, HTML5, CSS3, SQL
+      </div>
+      <div class="skills-category">
+        <strong>Frameworks & Libraries:</strong> React.js, Vite, Node.js, Express.js, FastAPI, Flask, Scikit-learn, Pandas
+      </div>
+      <div class="skills-category">
+        <strong>Databases & Tools:</strong> MySQL, SQLite, Git, GitHub, VS Code, Linux / Ubuntu, Postman
+      </div>
+      <div class="skills-category">
+        <strong>Core Computer Science:</strong> Data Structures & Algorithms, Object-Oriented Programming (OOP), DBMS, Web Security Basics
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+      <div class="section-title">Work Experience</div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <div class="item-title">Web Development Intern</div>
+          <div class="item-date">Dec 2025 – Mar 2026</div>
+        </div>
+        <div class="item-subtitle">Fusion Loop Solution</div>
+        <ul class="bullet-list">
+          <li>Engineered responsive, accessible front-end interfaces using HTML5, modern CSS, and vanilla JavaScript.</li>
+          <li>Optimized web page usability, streamlined component modularity, and improved browser rendering performance.</li>
+          <li>Collaborated on client-facing feature implementations aligning with engineering standards and agile cycles.</li>
+        </ul>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <div class="item-title">Web Development Intern</div>
+          <div class="item-date">Dec 2024 – Jan 2025</div>
+        </div>
+        <div class="item-subtitle">Coding Savvy</div>
+        <ul class="bullet-list">
+          <li>Constructed responsive multi-page web templates using HTML, CSS, JavaScript, and Bootstrap frameworks.</li>
+          <li>Enhanced mobile navigation adaptability and cross-browser consistency across handheld and desktop viewports.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section>
+      <div class="section-title">Key Projects</div>
+
+      <!-- Project 1 -->
+      <div class="item-block">
+        <div class="item-header">
+          <div class="item-title">
+            Biometric Electronic Voting System & Cryptographic Ledger
+          </div>
+          <div class="item-date">Python, Flask, SQLite, SHA-256, Merkle Chain</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Architected a secure digital polling kiosk with optical fingerprint & facial verification simulation.</li>
+          <li>Eliminated double-voting via atomic voter locks and decoupled voter identities from ballots to protect secret ballot laws.</li>
+          <li>Engineered an append-only Merkle cryptographic ledger with real-time tamper-detection auditing algorithms.</li>
+        </ul>
+        <div class="tech-stack-line">
+          <strong>GitHub:</strong> <a href="https://github.com/ManishKumar3371-sys/biometric-voting-system" target="_blank">github.com/ManishKumar3371-sys/biometric-voting-system</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="item-block">
+        <div class="item-header">
+          <div class="item-title">
+            SENTINEL-SEC // Web Security Penetration Testing Lab
+          </div>
+          <div class="item-date">Python 3, JavaScript, OWASP WSTG, CVSS v3.1</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Built an interactive defensive security assessment management portal adhering to OWASP WSTG v4.2 standards.</li>
+          <li>Implemented an automated HTTP response security header auditor and full FIRST.org CVSS v3.1 base scoring calculator.</li>
+          <li>Structured audit finding registries with vulnerability classification, impact matrices, and technical remediation blueprints.</li>
+        </ul>
+        <div class="tech-stack-line">
+          <strong>Live Demo:</strong> <a href="https://manishkumar3371-sys.github.io/web-security-lab/" target="_blank">manishkumar3371-sys.github.io/web-security-lab</a> | 
+          <strong>GitHub:</strong> <a href="https://github.com/ManishKumar3371-sys/web-security-lab" target="_blank">github.com/ManishKumar3371-sys/web-security-lab</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="item-block">
+        <div class="item-header">
+          <div class="item-title">
+            ModelWatch – Machine Learning Performance & Drift Monitoring
+          </div>
+          <div class="item-date">Python, FastAPI, React, Scikit-learn, Pandas</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed a continuous ML model monitoring portal tracking data distribution drift and statistical evaluation metrics.</li>
+          <li>Implemented tabular dataset validation pipelines and integrated house price prediction regression inference.</li>
+        </ul>
+        <div class="tech-stack-line">
+          <strong>Live Demo:</strong> <a href="https://model-watch-gules.vercel.app/" target="_blank">model-watch-gules.vercel.app</a> | 
+          <strong>GitHub:</strong> <a href="https://github.com/ManishKumar3371-sys/ModelWatch" target="_blank">github.com/ManishKumar3371-sys/ModelWatch</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="item-block">
+        <div class="item-header">
+          <div class="item-title">
+            Study Buddy – AI-Powered Learning Assistant
+          </div>
+          <div class="item-date">React 18, Vite, Node.js, Express, Google Gemini API</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Constructed a mobile-first, responsive educational chat assistant equipped with markdown rendering and code copying.</li>
+          <li>Integrated serverless backend endpoints to securely process academic queries for DSA, OS, DBMS, and system concepts.</li>
+        </ul>
+        <div class="tech-stack-line">
+          <strong>Live Demo:</strong> <a href="https://study-bot-sandy.vercel.app/" target="_blank">study-bot-sandy.vercel.app</a> | 
+          <strong>GitHub:</strong> <a href="https://github.com/ManishKumar3371-sys/Study-Bot" target="_blank">github.com/ManishKumar3371-sys/Study-Bot</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Achievements -->
+    <section>
+      <div class="section-title">Certifications & Achievements</div>
+      <ul class="bullet-list">
+        <li><strong>Hackathon Achievement Certificate:</strong> Participated in competitive software hackathon solving practical technical challenges.</li>
+        <li><strong>Web Development Internship Certificates:</strong> Awarded for completing engineering internships at Fusion Loop Solution & Coding Savvy.</li>
+        <li><strong>Tech Auto-Space Technical Event:</strong> Recognized participant in state-level engineering technical competition.</li>
+        <li><strong>AI Tools & Prompt Engineering Workshop:</strong> Practical certification in applying modern developer AI tooling for debugging and workflow acceleration.</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
