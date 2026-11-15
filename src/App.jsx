@@ -531,6 +531,37 @@ Message: ${callRequest.message}`
 </div>
 
 
+
+  <div className="project-card">
+    <div className="project-top">
+      <span className="project-tag">AI & CIVIC TECH</span>
+      <span className="project-number">07</span>
+    </div>
+
+    <h3>ElectionScan AI – Candidate Poster OCR & Affidavit Verification Engine</h3>
+
+    <p>
+      AI-powered public record engine allowing voters to scan election posters in Hindi and English.
+      Extracts candidate entities using dual-script OCR, fuzzy matches against databases via RapidFuzz,
+      and verifies public disclosures directly linked to official Election Commission of India (ECI) Form 26 affidavits.
+    </p>
+
+    <div className="project-tech">
+      Python 3 · Flask · Dual-script OCR (Hindi/English) · RapidFuzz · SQLite · ECI Form 26
+    </div>
+
+    <div className="project-links">
+      <a
+        href="https://github.com/ManishKumar3371-sys/ElectionScan-AI"
+        target="_blank"
+        rel="noreferrer"
+        className="project-link project-link-primary"
+      >
+        GitHub Source Code ↗
+      </a>
+    </div>
+  </div>
+
         </section>
           
 {/* CERTIFICATIONS */}
