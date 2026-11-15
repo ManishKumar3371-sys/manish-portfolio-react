@@ -552,10 +552,19 @@ Message: ${callRequest.message}`
 
     <div className="project-links">
       <a
-        href="https://github.com/ManishKumar3371-sys/ElectionScan-AI"
+        href="https://electionscan-ai.onrender.com"
         target="_blank"
         rel="noreferrer"
         className="project-link project-link-primary"
+      >
+        Live Demo ↗
+      </a>
+
+      <a
+        href="https://github.com/ManishKumar3371-sys/ElectionScan-AI"
+        target="_blank"
+        rel="noreferrer"
+        className="project-link"
       >
         GitHub Source Code ↗
       </a>
